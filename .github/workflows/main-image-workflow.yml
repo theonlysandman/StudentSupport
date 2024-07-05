@@ -20,6 +20,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Debug info
+        run: |
+          echo "Repository Owner: ${{ github.repository_owner }}"
+          echo "Image Name: ${{ matrix.image_name }}"
+          echo "Latest Tag: ${{ env.LATEST_TAG }}"
+
       - name: Fetch tags and set the latest tag
         run: |
           git fetch --tags
