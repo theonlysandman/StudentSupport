@@ -13,6 +13,9 @@ const passwordResetEnabled = isEnabled(process.env.ALLOW_PASSWORD_RESET);
 const sharedLinksEnabled =
   process.env.ALLOW_SHARED_LINKS === undefined || isEnabled(process.env.ALLOW_SHARED_LINKS);
 
+const teacherOptionsEnabled =
+  process.env.ALLOW_TEACHER_OPTIONS === undefined || isEnabled(process.env.ALLOW_TEACHER_OPTIONS);
+
 const publicSharedLinksEnabled =
   sharedLinksEnabled &&
   (process.env.ALLOW_SHARED_LINKS_PUBLIC === undefined ||
@@ -70,6 +73,7 @@ router.get('/', async function (req, res) {
       helpAndFaqURL: process.env.HELP_AND_FAQ_URL || 'https://librechat.ai',
       interface: req.app.locals.interfaceConfig,
       modelSpecs: req.app.locals.modelSpecs,
+      teacherOptionsEnabled,
       sharedLinksEnabled,
       publicSharedLinksEnabled,
       analyticsGtmId: process.env.ANALYTICS_GTM_ID,

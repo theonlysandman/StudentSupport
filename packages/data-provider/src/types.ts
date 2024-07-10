@@ -306,6 +306,7 @@ export type TStartupConfig = {
   helpAndFaqURL: string;
   customFooter?: string;
   modelSpecs?: TSpecsConfig;
+  teacherOptionsEnabled: boolean;
   sharedLinksEnabled: boolean;
   publicSharedLinksEnabled: boolean;
   analyticsGtmId?: string;

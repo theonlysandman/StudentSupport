@@ -16,6 +16,7 @@ import RenameButton from './RenameButton';
 import HoverToggle from './HoverToggle';
 import { cn } from '~/utils';
 import store from '~/store';
+import TeacherButton from './TeacherButton';
 import ShareButton from './ShareButton';
 
 type KeyEvent = KeyboardEvent<HTMLInputElement>;
@@ -126,6 +127,16 @@ export default function Conversation({ conversation, retainView, toggleNav, isLa
           setIsPopoverActive={setIsPopoverActive}
         >
           <DropDownMenu>
+            {startupConfig && startupConfig.teacherOptionsEnabled && (
+              <TeacherButton
+                conversationId={conversationId}
+                title={title}
+                appendLabel={true}
+                className="mb-[3.5px]"
+                setPopoverActive={setIsPopoverActive}
+              />
+            )}
+
             {startupConfig && startupConfig.sharedLinksEnabled && (
               <ShareButton
                 conversationId={conversationId}
