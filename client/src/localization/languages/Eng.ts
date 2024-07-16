@@ -513,6 +513,7 @@ export default {
   com_endpoint_config_value: 'Enter value for',
   com_endpoint_config_key_name_placeholder: 'Set API key first',
   com_endpoint_config_key_encryption: 'Your key will be encrypted and deleted at',
+  com_endpoint_config_key_never_expires: 'Your key will never expire',
   com_endpoint_config_key_expiry: 'the expiry time',
   com_endpoint_config_click_here: 'Click Here',
   com_endpoint_config_google_service_key: 'Google Service Account Key',
@@ -545,7 +546,7 @@ export default {
   com_nav_modular_chat: 'Enable switching Endpoints mid-conversation',
   com_nav_latex_parsing: 'Parsing LaTeX in messages (may affect performance)',
   com_nav_text_to_speech: 'Text to Speech',
-  com_nav_automatic_playback: 'Autoplay Latest Message (external only)',
+  com_nav_automatic_playback: 'Autoplay Latest Message',
   com_nav_speech_to_text: 'Speech to Text',
   com_nav_profile_picture: 'Profile Picture',
   com_nav_change_picture: 'Change picture',
@@ -564,6 +565,9 @@ export default {
   com_ui_code: 'Code',
   com_ui_travel: 'Travel',
   com_ui_teach_or_explain: 'Learning',
+  com_ui_select_file: 'Select a file',
+  com_ui_drag_drop_file: 'Drag and drop a file here',
+  com_ui_upload_image: 'Upload an image',
   com_ui_select_a_category: 'No category selected',
   com_nav_tool_dialog_description: 'Assistant must be saved to persist tool selections.',
   com_show_agent_settings: 'Show Agent Settings',
@@ -643,6 +647,7 @@ export default {
   com_nav_delete_cache_storage: 'Delete TTS cache storage',
   com_nav_enable_cache_tts: 'Enable cache TTS',
   com_nav_voice_select: 'Voice',
+  com_nav_enable_cloud_browser_voice: 'Use cloud-based voices',
   com_nav_info_enter_to_send:
     'When enabled, pressing `ENTER` will send your message. When disabled, pressing Enter will add a new line, and you\'ll need to press `CTRL + ENTER` to send your message.',
   com_nav_info_save_draft:
@@ -685,4 +690,5 @@ export default {
   com_nav_lang_dutch: 'Nederlands',
   com_nav_lang_indonesia: 'Indonesia',
   com_nav_lang_hebrew: 'עברית',
+  com_nav_lang_finnish: 'Suomi',
 };
