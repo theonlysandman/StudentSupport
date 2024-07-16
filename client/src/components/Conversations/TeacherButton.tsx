@@ -94,15 +94,13 @@ export default function TeacherButton({
         showCloseButton={true}
         showCancelButton={false}
         title={localize('com_ui_teacher_options_title')}
-        className="max-w-[550px]"
+        className="max-w-[800px]"
         main={
           <>
             <TeacherOptionsDialog
               setDialogOpen={setOpen}
               conversationId={conversationId}
               title={title}
-              share={share}
-              setShare={setShare}
               isUpdated={isUpdated}
             />
           </>
