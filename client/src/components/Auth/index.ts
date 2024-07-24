@@ -6,3 +6,4 @@ export { default as ApiErrorWatcher } from './ApiErrorWatcher';
 export { default as RequestPasswordReset } from './RequestPasswordReset';
 export { default as OnboardUniversity } from './OnboardUniversity';
 export { default as OnboardClass } from './OnboardClass';
+export { default as OnboardStatus } from './OnboardStatus';

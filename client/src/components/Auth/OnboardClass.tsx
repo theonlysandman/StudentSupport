@@ -11,7 +11,7 @@ function OnboardClass() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Process emails or CSV file here
-    navigate('/c/new');
+    navigate('/onboard/status');
   };
 
   const handleFileChange = (e) => {
