@@ -7,6 +7,7 @@ import {
   VerifyEmail,
   ApiErrorWatcher,
   OnboardUniversity,
+  OnboardClass,
 } from '~/components/Auth';
 import { AuthContextProvider } from '~/hooks/AuthContext';
 import StartupLayout from './Layouts/Startup';
@@ -54,6 +55,10 @@ export const router = createBrowserRouter([
   {
     path: 'onboard',
     element: <OnboardUniversity />,
+  },
+  {
+    path: 'onboard/class',
+    element: <OnboardClass />,
   },
   {
     element: <AuthLayout />,

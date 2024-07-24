@@ -5,3 +5,4 @@ export { default as VerifyEmail } from './VerifyEmail';
 export { default as ApiErrorWatcher } from './ApiErrorWatcher';
 export { default as RequestPasswordReset } from './RequestPasswordReset';
 export { default as OnboardUniversity } from './OnboardUniversity';
+export { default as OnboardClass } from './OnboardClass';
