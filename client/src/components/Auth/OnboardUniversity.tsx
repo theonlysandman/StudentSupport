@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ThemeSelector } from '~/components/ui';
-import { universities } from '~/db_data/universityData';
+import { universities } from '~/data/universityData';
 
 function MyOnboardUniversity() {
   const navigate = useNavigate();
