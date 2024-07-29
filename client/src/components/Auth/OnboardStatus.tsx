@@ -127,7 +127,7 @@ function OnboardStatus() {
             onClick={handleInviteStudents}
             className="group relative flex w-full max-w-xs justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:bg-gray-400 dark:disabled:bg-gray-600"
           >
-            View Class Highlights
+            View Class Highlights (coming soon)
           </button>
         </div>
       </div>

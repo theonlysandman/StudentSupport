@@ -17,7 +17,7 @@ function MyOnboardUniversity() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (university && department && classInfo) {
-      navigate('/c/new');
+      navigate('/onboard/class');
     }
   };
 
